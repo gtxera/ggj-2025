@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,23 +25,33 @@ public class Post : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI _sharesText;
 
-    [SerializeField]
     private PostData _data;
 
-    private void Start()
-    {
-        BindData(_data);
-    }
+    private bool _hasNumbers;
 
-    public void BindData(PostData data)
+    public void BindData(PostData data, bool withNumbers)
     {
+        _data = data;
         _usernameText.text = data.User.Username;
         _userIconImage.sprite = data.User.Icon;
         _image.sprite = data.Image;
         _text.text = data.Text;
+        _hasNumbers = withNumbers;
+        if (!withNumbers) return;
         _likesText.text = FormatNumber(data.Likes);
         _commentsText.text = FormatNumber(data.Comments);
         _sharesText.text = FormatNumber(data.Shares);
+    }
+
+    public void BindNumbers()
+    {
+        if (_hasNumbers)
+            return;
+        
+        _likesText.text = FormatNumber(_data.Likes);
+        _commentsText.text = FormatNumber(_data.Comments);
+        _sharesText.text = FormatNumber(_data.Shares);
+        _hasNumbers = true;
     }
 
     private static string FormatNumber(int n)
