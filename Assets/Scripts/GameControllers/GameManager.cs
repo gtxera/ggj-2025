@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject settingsPopUp;
     [SerializeField] GameObject notesPopUp;
     [SerializeField] GameObject errorPopUp;
+    [SerializeField] GameObject uploadPopUp;
 
     [SerializeField]
     private GameObject affirmationPopup;
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
         errorPopUp.SetActive(index == (int)Popups.Error);
         postPopUp.SetActive(index == (int)Popups.Post);
         affirmationPopup.SetActive(index == (int)Popups.Affirmation);
+        uploadPopUp.SetActive(index == (int)Popups.Upload);
     }
 }
 
@@ -52,5 +54,6 @@ public enum Popups
     Notes,
     Error,
     Post,
-    Affirmation
+    Affirmation,
+    Upload
 }
