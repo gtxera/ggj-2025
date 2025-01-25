@@ -27,7 +27,7 @@ public class Login : MonoBehaviour
     {
         if (username.Length > 10)
         {
-            _userNameInputField.text = _userNameInputField.text[..10];
+            _userNameInputField.SetTextWithoutNotify(_userNameInputField.text[..10]);
         }
         
         Validate(username);

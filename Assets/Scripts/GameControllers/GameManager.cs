@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 
 public enum MainScreens
 {
+    None,
     WorkArea,
     Feed,
     Login
@@ -46,6 +47,7 @@ public enum MainScreens
 
 public enum Popups
 {
+    None,
     Settings,
     Notes,
     Error,
