@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d28ddf0d67514548b89464d3de8409f, type: 3}
-  m_Name: Teste
+  m_Script: {fileID: 11500000, guid: 51ddad8751a7384499fd1d856ea0c934, type: 3}
+  m_Name: Cinico
   m_EditorClassIdentifier: 
-  _baseImage: {fileID: 0}
-  _posts:
-    _serializedList: []
+  _username: o.cinico.txt
+  _icon: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}

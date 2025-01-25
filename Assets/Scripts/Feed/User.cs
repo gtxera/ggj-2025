@@ -9,6 +9,6 @@ public class User : ScriptableObject
     [SerializeField]
     private Sprite _icon;
 
-    public string Username => _username;
+    public string Username => _username == "player" ? DaysManager.Instance.PlayerName : _username;
     public Sprite Icon => _icon;
 }

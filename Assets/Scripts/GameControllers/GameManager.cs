@@ -6,6 +6,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject workareaScreen;
     [SerializeField] GameObject feedScreen;
 
+    [SerializeField]
+    private GameObject loginScreen;
+
     [Header("Pop Ups Screens")]
     [SerializeField] GameObject generalPopUpScreen;
     [SerializeField] GameObject postPopUp;
@@ -17,6 +20,7 @@ public class GameManager : MonoBehaviour
     {
         workareaScreen.SetActive(index == 1);
         feedScreen.SetActive(index == 2);
+        loginScreen.SetActive(index == 3);
     }
 
     public void SwitchPopUp(int index)

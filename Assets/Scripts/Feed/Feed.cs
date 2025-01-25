@@ -19,17 +19,18 @@ public class Feed : MonoBehaviour
 
     private void Start()
     {
-        DaysManager.Instance.NextDay += CreatePosts;
+        DaysManager.Instance.NextDay += UpdateFeed;
     }
 
     public void CreatePost(PostData data, bool withNumbers = true)
     {
         var post = Instantiate(_postPrefab, _feedRect.content);
+        post.transform.SetSiblingIndex(_topElementsInOrder.Length);
         post.BindData(data, withNumbers);
         _posts.Add(post);
     }
     
-    private void CreatePosts(int day, string lastDayPost)
+    private void UpdateFeed(int day, string lastDayPost, FakeNews _)
     {
         var data = PostLoader.GetPostsFor(lastDayPost);
 
@@ -43,9 +44,7 @@ public class Feed : MonoBehaviour
             CreatePost(postData);
         }
 
-        foreach (var item in _topElementsInOrder.Select((value, i) => new { element = value, index = i}))
-        {
-            item.element.SetSiblingIndex(item.index);
-        }
+        _feedRect.content.anchoredPosition = Vector2.zero;
+        _feedRect.velocity = Vector2.zero;
     }
 }

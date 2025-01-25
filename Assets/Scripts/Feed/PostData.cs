@@ -6,7 +6,7 @@ public class PostData : ScriptableObject
     [SerializeField]
     private User _user;
 
-    [SerializeField, Multiline]
+    [SerializeField, TextArea]
     private string _text;
 
     [SerializeField]

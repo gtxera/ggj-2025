@@ -36,6 +36,10 @@ public class FakeNewsEditor : MonoBehaviour
     
     private void Start()
     {
+        var daysManager = DaysManager.Instance;
+        _currentFakeNews = daysManager.GetInitialFakeNews();
+        daysManager.NextDay += (_, _, fakeNews) => LoadFakeNews(fakeNews);
+        
         _overlayButton.onClick.AddListener(CycleOverlay);
         _postTextField.onValueChanged.AddListener(OnTextReceived);
         _finishEditButton.onClick.AddListener(FinishEditImage);
@@ -44,8 +48,11 @@ public class FakeNewsEditor : MonoBehaviour
         LoadFakeNews(_currentFakeNews);
     }
 
-    public void LoadFakeNews(FakeNews fakeNews)
+    private void LoadFakeNews(FakeNews fakeNews)
     {
+        if (fakeNews is null)
+            return;
+        
         _currentFakeNews = fakeNews;
         _baseImage.sprite = _currentFakeNews.BaseImage;
         _finishEditButton.interactable = false;
@@ -73,7 +80,7 @@ public class FakeNewsEditor : MonoBehaviour
 
     private void FinishEditImage()
     {
-        _finishEditButton.image.sprite = _currentFakeNews.GetFullImageFor(_currentOverlay);
+        _postImage.sprite = _currentFakeNews.GetFullImageFor(_currentOverlay);
     }
 
     private void OnTextReceived(string text)
@@ -99,6 +106,7 @@ public class FakeNewsEditor : MonoBehaviour
 
     private void Publish()
     {
+        DaysManager.Instance.GoToNextDay(_currentOverlay.name);
         _feed.CreatePost(_currentFakeNews.GetPostFor(_currentOverlay), false);
     }
 }

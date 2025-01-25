@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d28ddf0d67514548b89464d3de8409f, type: 3}
+  m_Name: SopaDeLetrinhas
+  m_EditorClassIdentifier: 
+  _baseImage: {fileID: 7780000938429478982, guid: 4de51971eb5715044bb5417c372168a2, type: 3}
+  _posts:
+    _serializedList:
+    - Key: {fileID: 21300000, guid: 306b3324d32ffe14c95d29118f833dc0, type: 3}
+      Value:
+        FullImage: {fileID: 6452923662270178235, guid: 00bcf4db2397bba45bcff7992b0d8d87, type: 3}
+        Text: "Comiss\xE3o internacional determina fim na venda de sopas de letrinhas:
+          decis\xE3o foi tomada ap\xF3s internautas invadirem mercados para destruir
+          latas, \u201CElas mentiram pra mim!\u201D."
+        Post: {fileID: 0}
+    - Key: {fileID: 21300000, guid: 312eaed0af1a60642b384d4c80542eb2, type: 3}
+      Value:
+        FullImage: {fileID: 4491090925507301229, guid: c6f0483eccdfe864caeddf430323c74d, type: 3}
+        Text: "Sopas de Letrinhas espalham mentiras!, aponta novo relat\xF3rio culin\xE1rio"
+        Post: {fileID: 11400000, guid: f995233006757b04bb48617dc5f0dc74, type: 2}

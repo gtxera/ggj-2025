@@ -35,6 +35,7 @@ public class Post : MonoBehaviour
         _usernameText.text = data.User.Username;
         _userIconImage.sprite = data.User.Icon;
         _image.sprite = data.Image;
+        _image.gameObject.SetActive(data.Image != null);
         _text.text = data.Text;
         _hasNumbers = withNumbers;
         if (!withNumbers) return;

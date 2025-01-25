@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
+  m_Name: Segredo1
+  m_EditorClassIdentifier: 
+  _user: {fileID: 11400000, guid: 5b2f489e16450634e9f78d7b69eda9d8, type: 2}
+  _text: to A-PA-VO-RA-DO!! joguei fora TODA s0p4 d l3tr1nh4 aq em ksa. e pensar
+    q elas tavam mentindo esse tempo td #cansei
+  _image: {fileID: 0}
+  _likes: 500
+  _comments: 500
+  _shares: 500
