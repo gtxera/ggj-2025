@@ -16,19 +16,39 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject notesPopUp;
     [SerializeField] GameObject errorPopUp;
 
+    [SerializeField]
+    private GameObject affirmationPopup;
+
     public void SwitchMainScreens(int index)
     {
-        workareaScreen.SetActive(index == 1);
-        feedScreen.SetActive(index == 2);
-        loginScreen.SetActive(index == 3);
+        workareaScreen.SetActive(index == (int)MainScreens.WorkArea);
+        feedScreen.SetActive(index == (int)MainScreens.Feed);
+        loginScreen.SetActive(index == (int)MainScreens.Login);
     }
 
     public void SwitchPopUp(int index)
     {
         generalPopUpScreen.SetActive(index != 0);
-        settingsPopUp.SetActive(index == 1);
-        notesPopUp.SetActive(index == 2);
-        errorPopUp.SetActive(index == 3);
-        postPopUp.SetActive(index == 4);
+        settingsPopUp.SetActive(index == (int)Popups.Settings);
+        notesPopUp.SetActive(index == (int)Popups.Notes);
+        errorPopUp.SetActive(index == (int)Popups.Error);
+        postPopUp.SetActive(index == (int)Popups.Post);
+        affirmationPopup.SetActive(index == (int)Popups.Affirmation);
     }
+}
+
+public enum MainScreens
+{
+    WorkArea,
+    Feed,
+    Login
+}
+
+public enum Popups
+{
+    Settings,
+    Notes,
+    Error,
+    Post,
+    Affirmation
 }
