@@ -372,7 +372,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1031,6 +1031,7 @@ MonoBehaviour:
   _likesText: {fileID: 3002712850122870521}
   _commentsText: {fileID: 4151106211389375387}
   _sharesText: {fileID: 4700210134393842420}
+  _data: {fileID: 0}
 --- !u!114 &7450072696942801927
 MonoBehaviour:
   m_ObjectHideFlags: 0
