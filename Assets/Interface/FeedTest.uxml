@@ -1,0 +1,10 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:GroupBox style="height: 100%; width: 100%;">
+        <engine:ListView name="Feed" style="margin-bottom: 0; padding-top: 0; align-items: stretch; align-self: center; transform-origin: bottom; translate: 0 300px; width: 900px; height: 750px; margin-left: 0; position: absolute; top: auto; left: auto; right: auto; bottom: auto;" />
+        <engine:GroupBox name="LeftGroup" style="align-self: flex-start; transform-origin: left bottom; width: 500px; height: 900px; position: absolute; translate: 0 150px; margin-left: 0; padding-left: 0; margin-right: 0;">
+            <engine:VisualElement name="PerfilPicture" style="flex-grow: 1; transform-origin: top; width: 500px; height: 300px; position: absolute;" />
+            <engine:Label text="Label" />
+        </engine:GroupBox>
+        <engine:GroupBox name="RightGroup" style="align-self: flex-end; transform-origin: right bottom; width: 500px; height: 900px; position: absolute; translate: 0 150px; margin-right: 0; margin-left: 0; padding-left: 0;" />
+    </engine:GroupBox>
+</engine:UXML>
