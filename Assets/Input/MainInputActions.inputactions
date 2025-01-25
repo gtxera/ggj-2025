@@ -1,0 +1,62 @@
+{
+    "name": "MainInputActions",
+    "maps": [
+        {
+            "name": "MancheteTyper",
+            "id": "6bb50d10-a79e-4bf6-a73c-849033947531",
+            "actions": [
+                {
+                    "name": "Type",
+                    "type": "Button",
+                    "id": "e167153e-fc65-4fdd-be7d-399418724f27",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9959c61e-329c-4958-b83a-0f53dbd94315",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Type",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Navigation",
+            "id": "61968f21-b5bd-429d-b624-15dc76def397",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "fc67f493-8f3f-40f5-a395-26d6ea26109b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "250d0cc7-8928-4c8d-b1b8-3bc6b28ace3e",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

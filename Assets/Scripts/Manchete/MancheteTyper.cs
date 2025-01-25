@@ -1,16 +1,23 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MancheteTyper : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField]
+    private Manchete _manchete;
+
+    private string _currentText;
+    private int _currentIndex;
+
+    private void Start()
     {
-        
+        InputManager.MancheteTyperActions.Type.performed += Type;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Type(InputAction.CallbackContext ctx)
     {
-        
+        _currentText += _manchete.Texto[_currentIndex];
+        _currentIndex++;
     }
 }
