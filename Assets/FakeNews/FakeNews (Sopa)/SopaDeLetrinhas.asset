@@ -21,7 +21,7 @@ MonoBehaviour:
         Text: "Comiss\xE3o internacional determina fim na venda de sopas de letrinhas:
           decis\xE3o foi tomada ap\xF3s internautas invadirem mercados para destruir
           latas, \u201CElas mentiram pra mim!\u201D."
-        Post: {fileID: 0}
+        Post: {fileID: 11400000, guid: 4f393579fb32569428c0fe6dda5b8586, type: 2}
     - Key: {fileID: 21300000, guid: 312eaed0af1a60642b384d4c80542eb2, type: 3}
       Value:
         FullImage: {fileID: 4491090925507301229, guid: c6f0483eccdfe864caeddf430323c74d, type: 3}

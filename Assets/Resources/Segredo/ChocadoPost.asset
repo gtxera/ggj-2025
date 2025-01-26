@@ -17,7 +17,7 @@ MonoBehaviour:
 
 
 '
-  _image: {fileID: 0}
+  _image: {fileID: -5046049701497791478, guid: 59657fb3e79453e45865301d57d1c662, type: 3}
   _likes: 78500
   _comments: 5003
   _shares: 27

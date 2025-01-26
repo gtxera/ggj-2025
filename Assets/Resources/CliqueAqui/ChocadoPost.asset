@@ -17,7 +17,7 @@ MonoBehaviour:
     q elas tavam mentindo esse tempo td #cansei
 
 '
-  _image: {fileID: 0}
+  _image: {fileID: -2829134000708040455, guid: fa25d39d21e6ca74b8688be4577925e2, type: 3}
   _likes: 101500
   _comments: 47800
   _shares: 5000

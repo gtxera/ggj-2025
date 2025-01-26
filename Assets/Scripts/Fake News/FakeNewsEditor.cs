@@ -116,6 +116,5 @@ public class FakeNewsEditor : MonoBehaviour
         _feed.CreatePost(_currentFakeNews.GetPostFor(_currentOverlay), false);
         _firstPage.gameObject.SetActive(true);
         _lastPage.gameObject.SetActive(false);
-        
     }
 }

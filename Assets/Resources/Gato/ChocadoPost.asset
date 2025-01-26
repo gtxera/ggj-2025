@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _user: {fileID: 11400000, guid: 5b2f489e16450634e9f78d7b69eda9d8, type: 2}
   _text: ACHO QUE O BARTOLOMEU JUNIOR HACKEOU MINHA CONTA DA BOLHA #AJUDAAA
-  _image: {fileID: 0}
+  _image: {fileID: -1215676791477641791, guid: dc05278589c568a48bed71c7ae9d87ec, type: 3}
   _likes: 526431
   _comments: 42112
   _shares: 8512

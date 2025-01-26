@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,9 +16,13 @@ public class Feed : MonoBehaviour
 
     private List<Post> _posts = new ();
 
+    private bool _needsUpdate;
+    private int _day;
+    private string _lastDayPost;
+
     private void Start()
     {
-        DaysManager.Instance.NextDay += UpdateFeed;
+        DaysManager.Instance.NextDay += SetToUpdate;
     }
 
     public void CreatePost(PostData data, bool withNumbers = true)
@@ -29,10 +32,16 @@ public class Feed : MonoBehaviour
         post.BindData(data, withNumbers);
         _posts.Add(post);
     }
-    
-    private void UpdateFeed(int day, string lastDayPost, FakeNews _)
+
+    private void SetToUpdate(int _, string lastDayPost, FakeNews __)
     {
-        var data = PostLoader.GetPostsFor(lastDayPost);
+        _needsUpdate = true;
+        _lastDayPost = lastDayPost;
+    }
+    
+    private void UpdateFeed()
+    {
+        var data = PostLoader.GetPostsFor(_lastDayPost);
 
         foreach (var post in _posts)
         {
@@ -46,5 +55,13 @@ public class Feed : MonoBehaviour
 
         _feedRect.content.anchoredPosition = Vector2.zero;
         _feedRect.velocity = Vector2.zero;
+
+        _needsUpdate = false;
+    }
+
+    private void OnEnable()
+    {
+        if (_needsUpdate)
+            UpdateFeed();
     }
 }

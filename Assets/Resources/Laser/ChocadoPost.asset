@@ -17,7 +17,7 @@ MonoBehaviour:
     #chocado #euavisei
 
 '
-  _image: {fileID: 0}
+  _image: {fileID: -6586835044654126187, guid: b182af3a339b0be4b97979ec623f44cf, type: 3}
   _likes: 1234567
   _comments: 98765
   _shares: 4321

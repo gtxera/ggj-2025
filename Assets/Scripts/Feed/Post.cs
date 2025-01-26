@@ -46,6 +46,8 @@ public class Post : MonoBehaviour
 
     public void BindNumbers()
     {
+        ((RectTransform)transform).ForceUpdateRectTransforms();
+        
         if (_hasNumbers)
             return;
         
