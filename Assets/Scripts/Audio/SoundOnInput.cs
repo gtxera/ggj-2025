@@ -5,7 +5,6 @@ public class SoundOnInput : MonoBehaviour
 {
     private MainInputActions _actions;
 
-    private AudioSource _audio;
 
     [SerializeField]
     private AudioClip _click;
@@ -17,13 +16,12 @@ public class SoundOnInput : MonoBehaviour
     {
         _actions = new MainInputActions();
         _actions.Enable();
-        _audio = GetComponent<AudioSource>();
 
         _actions.Main.Type.performed += (_) =>
         {
-            _audio.PlayOneShot(_typingSounds[Random.Range(0, _typingSounds.Length)]);
+            SFX.Instance.Play(_typingSounds[Random.Range(0, _typingSounds.Length)]);
         };
         
-        _actions.Main.Click.performed += (_) => _audio.PlayOneShot(_click);
+        _actions.Main.Click.performed += (_) => SFX.Instance.Play(_click);
     }
 }

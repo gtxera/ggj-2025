@@ -15,14 +15,19 @@ public class Music : MonoBehaviour
     {
         _source = GetComponent<AudioSource>();
         _source.clip = _menuMusic;
+        _source.loop = true;
         _source.Play();
-        DaysManager.Instance.NextDay += (_, _, _) => StopMusic();
-        
+        DaysManager.Instance.NextDay += (_, _, _) =>
+        {
+            if (DaysManager.Instance.IsFinalDay) 
+                StopMusic();
+        };
     }
 
     public void StartGame()
     {
         _source.clip = _gameMusic;
+        _source.loop = true;
         _source.Play();
     }
 

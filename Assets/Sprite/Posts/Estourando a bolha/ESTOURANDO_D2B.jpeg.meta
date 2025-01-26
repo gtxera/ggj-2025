@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ESTOURANDO_D2B_0: 7539377128208601517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

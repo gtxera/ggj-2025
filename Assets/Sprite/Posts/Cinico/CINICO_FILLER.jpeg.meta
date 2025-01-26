@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CINICO_FILLER_0: 4270993374867883020
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GERONIMO_PERFIL_0: -6324706531065341440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

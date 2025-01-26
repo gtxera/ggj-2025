@@ -223,7 +223,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      curtida_0: 8628574334708221803
+      curtida_1: -793081093455326920
+      curtida_2: 7005150848764948803
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      popup botao_0001_0: -2155788140629733963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
