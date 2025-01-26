@@ -19,8 +19,8 @@ public class AudioController : MonoBehaviour
 
     private void Start()
     {
-        _sfxSlider.onValueChanged.AddListener((f) => _mixer.SetFloat("SFXVolume", Mathf.Log10(f) * 20));
-        _musicSlider.onValueChanged.AddListener((f) => _mixer.SetFloat("MusicVolume", Mathf.Log10(f) * 20));
-        _masterSlider.onValueChanged.AddListener((f) => _mixer.SetFloat("MasterVolume", Mathf.Log10(f) * 20));
+        _sfxSlider.onValueChanged.AddListener((f) => _mixer.SetFloat("SFXVolume", f == 0 ? -1000000 : Mathf.Log10(f) * 20));
+        _musicSlider.onValueChanged.AddListener((f) => _mixer.SetFloat("MusicVolume", f == 0 ? -1000000 : Mathf.Log10(f) * 20));
+        _masterSlider.onValueChanged.AddListener((f) => _mixer.SetFloat("MasterVolume", f == 0 ? -1000000 : Mathf.Log10(f) * 20));
     }
 }

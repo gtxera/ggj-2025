@@ -16,8 +16,8 @@ public class Login : MonoBehaviour
     private void Start()
     {
         _button = GetComponent<Button>();
-        _button.interactable = false;
         _button.onClick.AddListener(LogIn);
+        _button.interactable = false;
         
         _userNameInputField.onValueChanged.AddListener(ValidateUsername);
         _passwordInputField.onValueChanged.AddListener(Validate);
@@ -46,6 +46,7 @@ public class Login : MonoBehaviour
 
     private void LogIn()
     {
+        Debug.Log("called");
         DaysManager.Instance.SetPlayerName(_userNameInputField.text);
     }
 }

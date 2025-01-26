@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerUser
   m_EditorClassIdentifier: 
   _username: player
-  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  _icon: {fileID: 4416569451006593581, guid: 8014e79739df15e41bd9cdeda88be371, type: 3}
