@@ -14,6 +14,9 @@ public class Feed : MonoBehaviour
     [SerializeField]
     private RectTransform[] _topElementsInOrder;
 
+    [SerializeField]
+    private PostData[] _initialPosts;
+
     private List<Post> _posts = new ();
 
     private bool _needsUpdate;
@@ -23,6 +26,11 @@ public class Feed : MonoBehaviour
     private void Start()
     {
         DaysManager.Instance.NextDay += SetToUpdate;
+        
+        foreach (var post in _initialPosts)
+        {
+            CreatePost(post);
+        }
     }
 
     public void CreatePost(PostData data, bool withNumbers = true)
