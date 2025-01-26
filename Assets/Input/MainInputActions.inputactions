@@ -2,13 +2,22 @@
     "name": "MainInputActions",
     "maps": [
         {
-            "name": "MancheteTyper",
-            "id": "6bb50d10-a79e-4bf6-a73c-849033947531",
+            "name": "Main",
+            "id": "884bbb6e-9a99-49f0-a340-4b41c29bc40c",
             "actions": [
                 {
                     "name": "Type",
                     "type": "Button",
-                    "id": "e167153e-fc65-4fdd-be7d-399418724f27",
+                    "id": "4d480c8e-3d5c-488a-986e-cfd76e516e69",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "d13ee8ae-2b40-4de6-a9e7-7d9cb2e88dc1",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -18,7 +27,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "9959c61e-329c-4958-b83a-0f53dbd94315",
+                    "id": "b176461d-b6fd-4cdb-b4a8-d43a67d0f824",
                     "path": "<Keyboard>/anyKey",
                     "interactions": "",
                     "processors": "",
@@ -26,32 +35,15 @@
                     "action": "Type",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Navigation",
-            "id": "61968f21-b5bd-429d-b624-15dc76def397",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "fc67f493-8f3f-40f5-a395-26d6ea26109b",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
+                },
                 {
                     "name": "",
-                    "id": "250d0cc7-8928-4c8d-b1b8-3bc6b28ace3e",
-                    "path": "",
+                    "id": "fa43d4d7-e29d-436c-a355-f63d7b4cf31a",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

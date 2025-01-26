@@ -30,7 +30,7 @@ public class Affirmation : MonoBehaviour
     private void OpenAffirmation()
     {
         _affirmationImage.sprite = _affirmationSprite;
-        _gameManager.SwitchPopUp((int)Popups.Affirmation);
+        _gameManager.SwitchPopUp((int)PopUps.Affirmation);
     }
 
     private void TryEnable(int day)

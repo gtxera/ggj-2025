@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -20,22 +21,42 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject affirmationPopup;
 
+    private void Start()
+    {
+        DaysManager.Instance.NextDay += (_, _, _) => OnNextDay();
+    }
+
+    public void SwitchMainScreens(MainScreens screen)
+    {
+        workareaScreen.SetActive(screen == MainScreens.WorkArea);
+        feedScreen.SetActive(screen == MainScreens.Feed);
+        loginScreen.SetActive(screen == MainScreens.Login);
+    }
+
     public void SwitchMainScreens(int index)
     {
-        workareaScreen.SetActive(index == (int)MainScreens.WorkArea);
-        feedScreen.SetActive(index == (int)MainScreens.Feed);
-        loginScreen.SetActive(index == (int)MainScreens.Login);
+        SwitchMainScreens((MainScreens)index);
+    }
+
+    public void SwitchPopUp(PopUps popUp)
+    {
+        generalPopUpScreen.SetActive(popUp != PopUps.None);
+        settingsPopUp.SetActive(popUp == PopUps.Settings);
+        notesPopUp.SetActive(popUp == PopUps.Notes);
+        errorPopUp.SetActive(popUp == PopUps.Error);
+        postPopUp.SetActive(popUp == PopUps.Post);
+        affirmationPopup.SetActive(popUp == PopUps.Affirmation);
+        uploadPopUp.SetActive(popUp == PopUps.Upload);
     }
 
     public void SwitchPopUp(int index)
     {
-        generalPopUpScreen.SetActive(index != 0);
-        settingsPopUp.SetActive(index == (int)Popups.Settings);
-        notesPopUp.SetActive(index == (int)Popups.Notes);
-        errorPopUp.SetActive(index == (int)Popups.Error);
-        postPopUp.SetActive(index == (int)Popups.Post);
-        affirmationPopup.SetActive(index == (int)Popups.Affirmation);
-        uploadPopUp.SetActive(index == (int)Popups.Upload);
+        SwitchPopUp((PopUps)index);
+    }
+
+    private void OnNextDay()
+    {
+        SwitchMainScreens(MainScreens.WorkArea);
     }
 }
 
@@ -47,7 +68,7 @@ public enum MainScreens
     Login
 }
 
-public enum Popups
+public enum PopUps
 {
     None,
     Settings,

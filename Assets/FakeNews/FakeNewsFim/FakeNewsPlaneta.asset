@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d28ddf0d67514548b89464d3de8409f, type: 3}
   m_Name: FakeNewsPlaneta
   m_EditorClassIdentifier: 
-  _baseImage: {fileID: 6610747360586437964, guid: 1a0e2499d6be02b4e950ab9f041b3ecd, type: 3}
+  _baseImage: {fileID: 21300000, guid: 1a0e2499d6be02b4e950ab9f041b3ecd, type: 3}
   _posts:
     _serializedList:
     - Key: {fileID: 21300000, guid: 9bd48a43a9d26664f851935819659f31, type: 3}

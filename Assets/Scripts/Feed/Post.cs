@@ -55,7 +55,7 @@ public class Post : MonoBehaviour
         _hasNumbers = true;
     }
 
-    private static string FormatNumber(int n)
+    public static string FormatNumber(int n)
     {
         return n switch
         {

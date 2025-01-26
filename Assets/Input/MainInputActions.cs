@@ -24,13 +24,22 @@ public partial class @MainInputActions: IInputActionCollection2, IDisposable
     ""name"": ""MainInputActions"",
     ""maps"": [
         {
-            ""name"": ""MancheteTyper"",
-            ""id"": ""6bb50d10-a79e-4bf6-a73c-849033947531"",
+            ""name"": ""Main"",
+            ""id"": ""884bbb6e-9a99-49f0-a340-4b41c29bc40c"",
             ""actions"": [
                 {
                     ""name"": ""Type"",
                     ""type"": ""Button"",
-                    ""id"": ""e167153e-fc65-4fdd-be7d-399418724f27"",
+                    ""id"": ""4d480c8e-3d5c-488a-986e-cfd76e516e69"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Click"",
+                    ""type"": ""Button"",
+                    ""id"": ""d13ee8ae-2b40-4de6-a9e7-7d9cb2e88dc1"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -40,7 +49,7 @@ public partial class @MainInputActions: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""9959c61e-329c-4958-b83a-0f53dbd94315"",
+                    ""id"": ""b176461d-b6fd-4cdb-b4a8-d43a67d0f824"",
                     ""path"": ""<Keyboard>/anyKey"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -48,32 +57,15 @@ public partial class @MainInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Type"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                }
-            ]
-        },
-        {
-            ""name"": ""Navigation"",
-            ""id"": ""61968f21-b5bd-429d-b624-15dc76def397"",
-            ""actions"": [
-                {
-                    ""name"": ""New action"",
-                    ""type"": ""Button"",
-                    ""id"": ""fc67f493-8f3f-40f5-a395-26d6ea26109b"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                }
-            ],
-            ""bindings"": [
+                },
                 {
                     ""name"": """",
-                    ""id"": ""250d0cc7-8928-4c8d-b1b8-3bc6b28ace3e"",
-                    ""path"": """",
+                    ""id"": ""fa43d4d7-e29d-436c-a355-f63d7b4cf31a"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""New action"",
+                    ""action"": ""Click"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -82,18 +74,15 @@ public partial class @MainInputActions: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // MancheteTyper
-        m_MancheteTyper = asset.FindActionMap("MancheteTyper", throwIfNotFound: true);
-        m_MancheteTyper_Type = m_MancheteTyper.FindAction("Type", throwIfNotFound: true);
-        // Navigation
-        m_Navigation = asset.FindActionMap("Navigation", throwIfNotFound: true);
-        m_Navigation_Newaction = m_Navigation.FindAction("New action", throwIfNotFound: true);
+        // Main
+        m_Main = asset.FindActionMap("Main", throwIfNotFound: true);
+        m_Main_Type = m_Main.FindAction("Type", throwIfNotFound: true);
+        m_Main_Click = m_Main.FindAction("Click", throwIfNotFound: true);
     }
 
     ~@MainInputActions()
     {
-        UnityEngine.Debug.Assert(!m_MancheteTyper.enabled, "This will cause a leak and performance issues, MainInputActions.MancheteTyper.Disable() has not been called.");
-        UnityEngine.Debug.Assert(!m_Navigation.enabled, "This will cause a leak and performance issues, MainInputActions.Navigation.Disable() has not been called.");
+        UnityEngine.Debug.Assert(!m_Main.enabled, "This will cause a leak and performance issues, MainInputActions.Main.Disable() has not been called.");
     }
 
     public void Dispose()
@@ -152,103 +141,62 @@ public partial class @MainInputActions: IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // MancheteTyper
-    private readonly InputActionMap m_MancheteTyper;
-    private List<IMancheteTyperActions> m_MancheteTyperActionsCallbackInterfaces = new List<IMancheteTyperActions>();
-    private readonly InputAction m_MancheteTyper_Type;
-    public struct MancheteTyperActions
+    // Main
+    private readonly InputActionMap m_Main;
+    private List<IMainActions> m_MainActionsCallbackInterfaces = new List<IMainActions>();
+    private readonly InputAction m_Main_Type;
+    private readonly InputAction m_Main_Click;
+    public struct MainActions
     {
         private @MainInputActions m_Wrapper;
-        public MancheteTyperActions(@MainInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Type => m_Wrapper.m_MancheteTyper_Type;
-        public InputActionMap Get() { return m_Wrapper.m_MancheteTyper; }
+        public MainActions(@MainInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Type => m_Wrapper.m_Main_Type;
+        public InputAction @Click => m_Wrapper.m_Main_Click;
+        public InputActionMap Get() { return m_Wrapper.m_Main; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(MancheteTyperActions set) { return set.Get(); }
-        public void AddCallbacks(IMancheteTyperActions instance)
+        public static implicit operator InputActionMap(MainActions set) { return set.Get(); }
+        public void AddCallbacks(IMainActions instance)
         {
-            if (instance == null || m_Wrapper.m_MancheteTyperActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_MancheteTyperActionsCallbackInterfaces.Add(instance);
+            if (instance == null || m_Wrapper.m_MainActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_MainActionsCallbackInterfaces.Add(instance);
             @Type.started += instance.OnType;
             @Type.performed += instance.OnType;
             @Type.canceled += instance.OnType;
+            @Click.started += instance.OnClick;
+            @Click.performed += instance.OnClick;
+            @Click.canceled += instance.OnClick;
         }
 
-        private void UnregisterCallbacks(IMancheteTyperActions instance)
+        private void UnregisterCallbacks(IMainActions instance)
         {
             @Type.started -= instance.OnType;
             @Type.performed -= instance.OnType;
             @Type.canceled -= instance.OnType;
+            @Click.started -= instance.OnClick;
+            @Click.performed -= instance.OnClick;
+            @Click.canceled -= instance.OnClick;
         }
 
-        public void RemoveCallbacks(IMancheteTyperActions instance)
+        public void RemoveCallbacks(IMainActions instance)
         {
-            if (m_Wrapper.m_MancheteTyperActionsCallbackInterfaces.Remove(instance))
+            if (m_Wrapper.m_MainActionsCallbackInterfaces.Remove(instance))
                 UnregisterCallbacks(instance);
         }
 
-        public void SetCallbacks(IMancheteTyperActions instance)
+        public void SetCallbacks(IMainActions instance)
         {
-            foreach (var item in m_Wrapper.m_MancheteTyperActionsCallbackInterfaces)
+            foreach (var item in m_Wrapper.m_MainActionsCallbackInterfaces)
                 UnregisterCallbacks(item);
-            m_Wrapper.m_MancheteTyperActionsCallbackInterfaces.Clear();
+            m_Wrapper.m_MainActionsCallbackInterfaces.Clear();
             AddCallbacks(instance);
         }
     }
-    public MancheteTyperActions @MancheteTyper => new MancheteTyperActions(this);
-
-    // Navigation
-    private readonly InputActionMap m_Navigation;
-    private List<INavigationActions> m_NavigationActionsCallbackInterfaces = new List<INavigationActions>();
-    private readonly InputAction m_Navigation_Newaction;
-    public struct NavigationActions
-    {
-        private @MainInputActions m_Wrapper;
-        public NavigationActions(@MainInputActions wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Newaction => m_Wrapper.m_Navigation_Newaction;
-        public InputActionMap Get() { return m_Wrapper.m_Navigation; }
-        public void Enable() { Get().Enable(); }
-        public void Disable() { Get().Disable(); }
-        public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(NavigationActions set) { return set.Get(); }
-        public void AddCallbacks(INavigationActions instance)
-        {
-            if (instance == null || m_Wrapper.m_NavigationActionsCallbackInterfaces.Contains(instance)) return;
-            m_Wrapper.m_NavigationActionsCallbackInterfaces.Add(instance);
-            @Newaction.started += instance.OnNewaction;
-            @Newaction.performed += instance.OnNewaction;
-            @Newaction.canceled += instance.OnNewaction;
-        }
-
-        private void UnregisterCallbacks(INavigationActions instance)
-        {
-            @Newaction.started -= instance.OnNewaction;
-            @Newaction.performed -= instance.OnNewaction;
-            @Newaction.canceled -= instance.OnNewaction;
-        }
-
-        public void RemoveCallbacks(INavigationActions instance)
-        {
-            if (m_Wrapper.m_NavigationActionsCallbackInterfaces.Remove(instance))
-                UnregisterCallbacks(instance);
-        }
-
-        public void SetCallbacks(INavigationActions instance)
-        {
-            foreach (var item in m_Wrapper.m_NavigationActionsCallbackInterfaces)
-                UnregisterCallbacks(item);
-            m_Wrapper.m_NavigationActionsCallbackInterfaces.Clear();
-            AddCallbacks(instance);
-        }
-    }
-    public NavigationActions @Navigation => new NavigationActions(this);
-    public interface IMancheteTyperActions
+    public MainActions @Main => new MainActions(this);
+    public interface IMainActions
     {
         void OnType(InputAction.CallbackContext context);
-    }
-    public interface INavigationActions
-    {
-        void OnNewaction(InputAction.CallbackContext context);
+        void OnClick(InputAction.CallbackContext context);
     }
 }

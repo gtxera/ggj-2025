@@ -1,28 +1,12 @@
+using System;
 using UnityEngine;
 
-public static class InputManager
+public class InputManager : MonoBehaviour
 {
-    private static MainInputActions _actions;
+    private MainInputActions _actions;
 
-    public static MainInputActions.NavigationActions NavigationActions => _actions.Navigation;
-
-    public static MainInputActions.MancheteTyperActions MancheteTyperActions => _actions.MancheteTyper;
-
-    
-    static InputManager()
+    private void Start()
     {
         _actions = new MainInputActions();
-    }
-
-    public static void SwitchToMancheteTyper()
-    {
-        _actions.Navigation.Disable();
-        _actions.MancheteTyper.Enable();
-    }
-    
-    public static void SwitchToNavitgation()
-    {
-        _actions.Navigation.Enable();
-        _actions.MancheteTyper.Disable();
     }
 }
