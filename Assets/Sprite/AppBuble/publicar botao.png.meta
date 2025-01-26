@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      publicar botao_0: 8276292333566111415
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

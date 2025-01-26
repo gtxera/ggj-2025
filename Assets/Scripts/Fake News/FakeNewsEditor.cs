@@ -28,6 +28,12 @@ public class FakeNewsEditor : MonoBehaviour
     private Feed _feed;
 
     [SerializeField]
+    private RectTransform _firstPage;
+
+    [SerializeField]
+    private RectTransform _lastPage;
+
+    [SerializeField]
     private FakeNews _currentFakeNews;
     private IEnumerator<Sprite> _overlaysEnumerator;
     private Sprite _currentOverlay;
@@ -108,5 +114,8 @@ public class FakeNewsEditor : MonoBehaviour
     {
         DaysManager.Instance.GoToNextDay(_currentOverlay.name);
         _feed.CreatePost(_currentFakeNews.GetPostFor(_currentOverlay), false);
+        _firstPage.gameObject.SetActive(true);
+        _lastPage.gameObject.SetActive(false);
+        
     }
 }

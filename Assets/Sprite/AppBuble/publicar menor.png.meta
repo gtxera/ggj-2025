@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      publicar menor_0: 1725595405535343844
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject loginScreen;
 
+    [SerializeField]
+    private GameObject creditsScreen;
+
     [Header("Pop Ups Screens")]
     [SerializeField] GameObject generalPopUpScreen;
     [SerializeField] GameObject postPopUp;
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour
         workareaScreen.SetActive(screen == MainScreens.WorkArea);
         feedScreen.SetActive(screen == MainScreens.Feed);
         loginScreen.SetActive(screen == MainScreens.Login);
+        creditsScreen.SetActive(screen == MainScreens.Credits);
     }
 
     public void SwitchMainScreens(int index)
@@ -65,7 +69,8 @@ public enum MainScreens
     None,
     WorkArea,
     Feed,
-    Login
+    Login,
+    Credits
 }
 
 public enum PopUps

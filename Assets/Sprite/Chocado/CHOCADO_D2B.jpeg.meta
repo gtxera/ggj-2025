@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CHOCADO_D2B_0: -1215676791477641791
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
