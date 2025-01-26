@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ddad8751a7384499fd1d856ea0c934, type: 3}
   m_Name: Geronomo
   m_EditorClassIdentifier: 
-  _username: 
+  _username: '@ger0nomo.pensa'
   _icon: {fileID: 0}

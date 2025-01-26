@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d28ddf0d67514548b89464d3de8409f, type: 3}
+  m_Name: FakeNewsPlaneta
+  m_EditorClassIdentifier: 
+  _baseImage: {fileID: 6610747360586437964, guid: 1a0e2499d6be02b4e950ab9f041b3ecd, type: 3}
+  _posts:
+    _serializedList:
+    - Key: {fileID: 21300000, guid: 9bd48a43a9d26664f851935819659f31, type: 3}
+      Value:
+        FullImage: {fileID: 21300000, guid: e5c92fe2b64c3d548bc41136175bffae, type: 3}
+        Text: "P\xE2nico mundial: asteroide do tamanho de um planeta em rota de colis\xE3o
+          com a Terra!"
+        Post: {fileID: 11400000, guid: c28dfd41b2b18cc42a176bb5471e6c23, type: 2}
+    - Key: {fileID: 21300000, guid: 8cbdac5093168cd4bb6013d6d595b666, type: 3}
+      Value:
+        FullImage: {fileID: 21300000, guid: 9f1e4318757532c498939de5fa2701c1, type: 3}
+        Text: "\u201CO fim do mundo se aproxima\u201D, aponta a comiss\xE3o internacional
+          ap\xF3s laser espacial disparar contra a Terra"
+        Post: {fileID: 11400000, guid: aac8bb5c50d3f724ca481b0f463f5581, type: 2}

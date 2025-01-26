@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
-  m_Name: ChocadoPost
+  m_Name: LaserPost
   m_EditorClassIdentifier: 
-  _user: {fileID: 11400000, guid: 5b2f489e16450634e9f78d7b69eda9d8, type: 2}
-  _text: que ESCANDALOo! daq a pouco minha LIXEIRA vai pedir FOLGA #fimdotempo
-  _image: {fileID: 0}
-  _likes: 36745
-  _comments: 7463
-  _shares: 437
+  _user: {fileID: 11400000, guid: 57521b7de423597489e6fb7a850904d3, type: 2}
+  _text: "\u201CO fim do mundo se aproxima\u201D, aponta a comiss\xE3o internacional
+    ap\xF3s laser espacial disparar contra a Terra"
+  _image: {fileID: 725313164900273590, guid: 9f1e4318757532c498939de5fa2701c1, type: 3}
+  _likes: 314144
+  _comments: 41241
+  _shares: 3323

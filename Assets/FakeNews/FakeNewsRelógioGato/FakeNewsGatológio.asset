@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d28ddf0d67514548b89464d3de8409f, type: 3}
+  m_Name: "FakeNewsGatol\xF3gio"
+  m_EditorClassIdentifier: 
+  _baseImage: {fileID: 0}
+  _posts:
+    _serializedList:
+    - Key: {fileID: 2801406450053015765, guid: 3048b86e2ec5e3041bc871db85354fb9, type: 3}
+      Value:
+        FullImage: {fileID: 0}
+        Text: "Fora de hora! Rel\xF3gios iniciam movimento sindical para reduzir
+          jornada de trabalho de 24 horas"
+        Post: {fileID: 11400000, guid: 60b56d5f97455b6498209ffe9f219fa2, type: 2}
+    - Key: {fileID: 2474792378730523024, guid: ce82144958f025c44991d397874dce65, type: 3}
+      Value:
+        FullImage: {fileID: 0}
+        Text: Estudos apontam que 73% dos gatos sabem usar a internet, mas preferem
+          sonegar impostos
+        Post: {fileID: 11400000, guid: 596e0d137efcf5e43b09aadce8a0ae5f, type: 2}

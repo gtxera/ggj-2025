@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
   m_Name: geronomoPost
   m_EditorClassIdentifier: 
-  _user: {fileID: 11400000, guid: 9facc350110b6d74ba23fae2edc3e577, type: 2}
-  _text: "ABSURDO! Cada dia tao mais ABSURDAS as coisas q eu leio nessa rede. PAREM
-    COM AS MENTIRAS #asopa\xE9inocente"
+  _user: {fileID: 11400000, guid: 5210cee2a39aab04e936e70c09d60206, type: 2}
+  _text: 'URGENTE: gnt se algm enviar um link flnd0 q vai ganhar #fakecoin NAO CLIQUEM!!!
+    eh um virus q dxa todas as LETRAS MAIUSCULAS e NAO TEM como tirar!!! SOH REPASSAND0o!'
   _image: {fileID: 0}
-  _likes: 57300
-  _comments: 12900
-  _shares: 324
+  _likes: 7409
+  _comments: 863
+  _shares: 84

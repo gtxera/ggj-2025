@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
   m_Name: CinicoPost
   m_EditorClassIdentifier: 
-  _user: {fileID: 0}
-  _text: 
+  _user: {fileID: 11400000, guid: 9facc350110b6d74ba23fae2edc3e577, type: 2}
+  _text: COMO DESATIVA A LETRA GRANDE
   _image: {fileID: 0}
-  _likes: 0
-  _comments: 0
-  _shares: 0
+  _likes: 624
+  _comments: 41
+  _shares: 8
