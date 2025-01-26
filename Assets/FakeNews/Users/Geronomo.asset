@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Geronomo
   m_EditorClassIdentifier: 
   _username: '@ger0nomo.pensa'
-  _icon: {fileID: 0}
+  _icon: {fileID: -6324706531065341440, guid: fd6d92101188ce24abefa9b9807d20d8, type: 3}

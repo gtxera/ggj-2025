@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _user: {fileID: 11400000, guid: 9facc350110b6d74ba23fae2edc3e577, type: 2}
   _text: esqeci a novela na tv e agora meu cachorro ta latindo em espanhol
-  _image: {fileID: 0}
+  _image: {fileID: 4270993374867883020, guid: a58595bf4127c7c4084ad7a001b64ba3, type: 3}
   _likes: 6494
   _comments: 964
   _shares: 4
