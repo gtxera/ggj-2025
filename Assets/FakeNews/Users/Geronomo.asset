@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51ddad8751a7384499fd1d856ea0c934, type: 3}
-  m_Name: TesteUser
+  m_Name: Geronomo
   m_EditorClassIdentifier: 
-  _username: '@ch0cado_2000'
-  _icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  _username: 
+  _icon: {fileID: 0}

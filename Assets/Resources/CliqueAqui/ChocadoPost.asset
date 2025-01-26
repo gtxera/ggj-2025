@@ -10,11 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
-  m_Name: Teste 1
+  m_Name: ChocadoPost
   m_EditorClassIdentifier: 
-  _user: {fileID: 11400000, guid: 48eeb350b1e84714f81628c0a7a89ae0, type: 2}
-  _text: DEU RUIM DEMAIS
-  _image: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _likes: 100
-  _comments: 1000
-  _shares: 10000
+  _user: {fileID: 11400000, guid: 5b2f489e16450634e9f78d7b69eda9d8, type: 2}
+  _text: 'to A-PA-VO-RA-DO!! joguei fora TODA s0p4 d l3tr1nh4 aq em ksa. e pensar
+    q elas tavam mentindo esse tempo td #cansei
+
+'
+  _image: {fileID: 0}
+  _likes: 101500
+  _comments: 47800
+  _shares: 5000
