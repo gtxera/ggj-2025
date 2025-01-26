@@ -3,30 +3,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [Header("Main Screens")]
-    [SerializeField]
-    GameObject workareaScreen;
-
-    [SerializeField]
-    GameObject feedScreen;
+    [SerializeField] GameObject workareaScreen;
+    [SerializeField] GameObject feedScreen;
 
     [SerializeField]
     private GameObject loginScreen;
 
     [Header("Pop Ups Screens")]
-    [SerializeField]
-    GameObject generalPopUpScreen;
-
-    [SerializeField]
-    GameObject postPopUp;
-
-    [SerializeField]
-    GameObject settingsPopUp;
-
-    [SerializeField]
-    GameObject notesPopUp;
-
-    [SerializeField]
-    GameObject errorPopUp;
+    [SerializeField] GameObject generalPopUpScreen;
+    [SerializeField] GameObject postPopUp;
+    [SerializeField] GameObject settingsPopUp;
+    [SerializeField] GameObject notesPopUp;
+    [SerializeField] GameObject errorPopUp;
+    [SerializeField] GameObject uploadPopUp;
 
     [SerializeField]
     private GameObject affirmationPopup;
@@ -46,13 +35,8 @@ public class GameManager : MonoBehaviour
         errorPopUp.SetActive(index == (int)Popups.Error);
         postPopUp.SetActive(index == (int)Popups.Post);
         affirmationPopup.SetActive(index == (int)Popups.Affirmation);
+        uploadPopUp.SetActive(index == (int)Popups.Upload);
     }
-
-    public void SwitchPopUp(Popups popup)
-    {
-        
-    }
-
 }
 
 public enum MainScreens
@@ -70,5 +54,6 @@ public enum Popups
     Notes,
     Error,
     Post,
-    Affirmation
+    Affirmation,
+    Upload
 }
