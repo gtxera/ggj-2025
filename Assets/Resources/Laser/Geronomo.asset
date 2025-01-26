@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Geronomo
   m_EditorClassIdentifier: 
   _user: {fileID: 11400000, guid: 5210cee2a39aab04e936e70c09d60206, type: 2}
-  _text: "Caos espalha-se mundialmente ap\xF3s internautas acreditarem que o fim
-    do mundo est\xE1 pr\xF3ximo. \u201CA verdade tornou-se obsoleta\u201D, declarou 
-    o presidente da comiss\xE3o internacional."
+  _text: hm. achei q a gnt levava essa rede na brincadeira. gnt? tao botando fogo
+    na minha rua ???
   _image: {fileID: 0}
   _likes: 72427
   _comments: 2474

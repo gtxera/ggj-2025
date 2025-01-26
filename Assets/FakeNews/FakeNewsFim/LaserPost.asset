@@ -15,7 +15,7 @@ MonoBehaviour:
   _user: {fileID: 11400000, guid: 57521b7de423597489e6fb7a850904d3, type: 2}
   _text: "\u201CO fim do mundo se aproxima\u201D, aponta a comiss\xE3o internacional
     ap\xF3s laser espacial disparar contra a Terra"
-  _image: {fileID: 725313164900273590, guid: 9f1e4318757532c498939de5fa2701c1, type: 3}
+  _image: {fileID: 21300000, guid: 9f1e4318757532c498939de5fa2701c1, type: 3}
   _likes: 314144
   _comments: 41241
   _shares: 3323
