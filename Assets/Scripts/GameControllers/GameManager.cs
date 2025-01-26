@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [Header("Main Screens")]
+    [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject workareaScreen;
     [SerializeField] GameObject feedScreen;
 
@@ -24,13 +25,28 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject affirmationPopup;
 
+    [Header("Other Elements")]
+    [SerializeField] Animator mainMenuAnim;
+    [SerializeField] Animator loginAnim;
+
+    private void Awake()
+    {
+        //SwitchMainScreens(MainScreens.MainMenu);   
+    }
+
     private void Start()
     {
         DaysManager.Instance.NextDay += (_, _, _) => OnNextDay();
     }
 
+    public void StartGame()
+    {
+        mainMenuAnim.SetTrigger("Play");
+    }
+
     public void SwitchMainScreens(MainScreens screen)
     {
+        mainMenu.SetActive(screen == MainScreens.MainMenu);
         workareaScreen.SetActive(screen == MainScreens.WorkArea);
         feedScreen.SetActive(screen == MainScreens.Feed);
         loginScreen.SetActive(screen == MainScreens.Login);
@@ -66,7 +82,7 @@ public class GameManager : MonoBehaviour
 
 public enum MainScreens
 {
-    None,
+    MainMenu,
     WorkArea,
     Feed,
     Login,

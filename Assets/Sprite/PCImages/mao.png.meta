@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 800d52e4fec735f4fbd33faf08bbc693
+guid: 231b33648dbce1d42bb6059b261301bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3577413302323625458
-    second: GERONIMO_D2B_0
+      213: -5217127660197988667
+    second: mao_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GERONIMO_D2B_0
+      name: mao_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 693
-        height: 1280
+        width: 628
+        height: 542
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e024e343e897a5ec0800000000000000
-      internalID: -3577413302323625458
+      spriteID: 5c6b80ad80a0997b0800000000000000
+      internalID: -5217127660197988667
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GERONIMO_D2B_0: -3577413302323625458
+      mao_0: -5217127660197988667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
