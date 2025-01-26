@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f9fce8ad78bf9024ba006c0e6783a666
+guid: fa25d39d21e6ca74b8688be4577925e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 513687921477742723
-    second: IMAGEM_GATO_0
+      213: -2829134000708040455
+    second: CHOCADO_D1A_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMAGEM_GATO_0
+      name: CHOCADO_D1A_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 800
-        height: 1000
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 380f615617cf02700800000000000000
-      internalID: 513687921477742723
+      spriteID: 9f841d1ad95ecb8d0800000000000000
+      internalID: -2829134000708040455
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      IMAGEM_GATO_0: 513687921477742723
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f9fce8ad78bf9024ba006c0e6783a666
+guid: 314c6a8d89641d04ab50821130ded197
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 513687921477742723
-    second: IMAGEM_GATO_0
+      213: 1099273941788662971
+    second: foto de perfil publico_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMAGEM_GATO_0
+      name: foto de perfil publico_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 800
-        height: 1000
+        width: 117
+        height: 114
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 380f615617cf02700800000000000000
-      internalID: 513687921477742723
+      spriteID: bbc182b63d7614f00800000000000000
+      internalID: 1099273941788662971
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      IMAGEM_GATO_0: 513687921477742723
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

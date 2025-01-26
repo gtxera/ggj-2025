@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
-  m_Name: CinicoPost
+  m_Name: Estourando a bolha
   m_EditorClassIdentifier: 
-  _user: {fileID: 11400000, guid: 9facc350110b6d74ba23fae2edc3e577, type: 2}
-  _text: "\xC9 real. O mundo t\xE1 acabdno."
+  _user: {fileID: 11400000, guid: 1044aee2b1ed9154aa1b7a0511ad849b, type: 2}
+  _text: "Presidentes banem o consumo de sopa de letrinhas em departamentos p\xFAblicos
+    ao redor do mundo ap\xF3s esc\xE2ndalo de segredos de estado, \u201CA sopa soletrou
+    meu CPF!\u201D\r\n"
   _image: {fileID: 0}
-  _likes: 65461
-  _comments: 7542
-  _shares: 4121
+  _likes: 513512
+  _comments: 42166
+  _shares: 6132

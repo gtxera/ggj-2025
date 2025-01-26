@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
-  m_Name: CinicoPost
+  m_Name: Estourando a bolha
   m_EditorClassIdentifier: 
-  _user: {fileID: 11400000, guid: 9facc350110b6d74ba23fae2edc3e577, type: 2}
-  _text: "\xC9 real. O mundo t\xE1 acabdno."
+  _user: {fileID: 11400000, guid: 1044aee2b1ed9154aa1b7a0511ad849b, type: 2}
+  _text: "Comiss\xE3o internacional determina fim da venda de sopas de letrinhas:
+    decis\xE3o foi tomada ap\xF3s internautas invadirem mercados para destruir latas,
+    \u201CElas mentiram pra mim!\u201D"
   _image: {fileID: 0}
-  _likes: 65461
-  _comments: 7542
-  _shares: 4121
+  _likes: 2147483647
+  _comments: 2147483647
+  _shares: 2147483647

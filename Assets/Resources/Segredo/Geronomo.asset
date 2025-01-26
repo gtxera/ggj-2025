@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a508c31f9eaa2544be591fdaedcff31, type: 3}
-  m_Name: "Rel\xF3gioPost"
+  m_Name: Geronomo
   m_EditorClassIdentifier: 
-  _user: {fileID: 11400000, guid: 57521b7de423597489e6fb7a850904d3, type: 2}
-  _text: "Fora de hora! Rel\xF3gios iniciam movimento sindical para reduzir jornada
-    de trabalho de 24 horas"
-  _image: {fileID: 21300000, guid: 4535f9f849d709d48b6477eabb1f0c54, type: 3}
-  _likes: 82199
-  _comments: 5323
-  _shares: 642
+  _user: {fileID: 11400000, guid: 5210cee2a39aab04e936e70c09d60206, type: 2}
+  _text: fui cancelar meu plano d internet e ameacaram expor meu historico d busca
+    #dicas?
+  _image: {fileID: 0}
+  _likes: 936
+  _comments: 42
+  _shares: 7

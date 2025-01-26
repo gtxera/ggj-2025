@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: f9fce8ad78bf9024ba006c0e6783a666
+guid: 3f8d87e508807b54083f13f7f41a97d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 513687921477742723
-    second: IMAGEM_GATO_0
+      213: -4123993009221809426
+    second: IMAGEM_ESCRITORIO_OVERLAY2_0
+  - first:
+      213: 5464479144644102038
+    second: IMAGEM_ESCRITORIO_OVERLAY2_1
+  - first:
+      213: -2136505228516697184
+    second: IMAGEM_ESCRITORIO_OVERLAY2_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,13 +145,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMAGEM_GATO_0
+      name: IMAGEM_ESCRITORIO_OVERLAY2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 800
-        height: 1000
+        y: 1179
+        width: 15
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +160,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 380f615617cf02700800000000000000
-      internalID: 513687921477742723
+      spriteID: eeac32d3532a4c6c0800000000000000
+      internalID: -4123993009221809426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMAGEM_ESCRITORIO_OVERLAY2_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 1915
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697ca0b74dab5db40800000000000000
+      internalID: 5464479144644102038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IMAGEM_ESCRITORIO_OVERLAY2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 729
+        width: 7
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab5f7970db9952e0800000000000000
+      internalID: -2136505228516697184
       vertices: []
       indices: 
       edges: []
@@ -164,7 +214,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +224,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMAGEM_GATO_0: 513687921477742723
+      IMAGEM_ESCRITORIO_OVERLAY2_0: -4123993009221809426
+      IMAGEM_ESCRITORIO_OVERLAY2_1: 5464479144644102038
+      IMAGEM_ESCRITORIO_OVERLAY2_2: -2136505228516697184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
