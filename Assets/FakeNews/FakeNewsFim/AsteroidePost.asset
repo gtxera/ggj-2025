@@ -15,7 +15,7 @@ MonoBehaviour:
   _user: {fileID: 11400000, guid: 57521b7de423597489e6fb7a850904d3, type: 2}
   _text: "P\xE2nico mundial: asteroide do tamanho de um planeta em rota de colis\xE3o
     com a Terra!"
-  _image: {fileID: 2853653390268935456, guid: e5c92fe2b64c3d548bc41136175bffae, type: 3}
+  _image: {fileID: 21300000, guid: 9f1e4318757532c498939de5fa2701c1, type: 3}
   _likes: 3578548
   _comments: 74236
   _shares: 2236
