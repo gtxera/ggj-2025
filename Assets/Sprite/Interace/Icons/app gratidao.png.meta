@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      app gratidao_0: 2474792378730523024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

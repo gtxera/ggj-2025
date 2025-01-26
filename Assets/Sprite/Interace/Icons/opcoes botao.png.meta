@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      opcoes botao_0: 4259376051842781721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

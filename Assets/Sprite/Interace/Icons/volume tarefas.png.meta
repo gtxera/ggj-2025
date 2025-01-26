@@ -273,7 +273,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      volume tarefas_0: -4747136564637073775
+      volume tarefas_1: -4641715536510763507
+      volume tarefas_2: 8889298839905134885
+      volume tarefas_3: 2982875954723111784
+      volume tarefas_4: -3674769970650330870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

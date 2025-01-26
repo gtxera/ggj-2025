@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      app bolha_0: 2801406450053015765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
