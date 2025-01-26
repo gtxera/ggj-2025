@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SegredoPost
   m_EditorClassIdentifier: 
   _user: {fileID: 11400000, guid: 57521b7de423597489e6fb7a850904d3, type: 2}
-  _text: "Sopas de Letrinhas espalham mentiras!, aponta novo relat\xF3rio culin\xE1rio"
+  _text: "Comiss\xE3o internacional esconde segredos de estado em sopa de letrinhas"
   _image: {fileID: 4491090925507301229, guid: c6f0483eccdfe864caeddf430323c74d, type: 3}
   _likes: 1246
   _comments: 337

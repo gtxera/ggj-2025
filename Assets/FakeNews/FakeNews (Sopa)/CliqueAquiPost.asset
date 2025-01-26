@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: CliqueAquiPost
   m_EditorClassIdentifier: 
   _user: {fileID: 11400000, guid: 57521b7de423597489e6fb7a850904d3, type: 2}
-  _text: "Comiss\xE3o internacional determina fim na venda de sopas de letrinhas:
-    decis\xE3o foi tomada ap\xF3s internautas invadirem mercados para destruir latas,
-    \u201CElas mentiram pra mim!\u201D."
+  _text: "Sopas de Letrinhas espalham mentiras!, aponta novo relat\xF3rio culin\xE1rio"
   _image: {fileID: 6452923662270178235, guid: 00bcf4db2397bba45bcff7992b0d8d87, type: 3}
   _likes: 1246
   _comments: 337
